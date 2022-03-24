@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 
 public class MyEventFrame extends JFrame implements ActionListener{
 
-	private JButton btn;		// ÀÎ½ºÅÏ½º º¯¼ö 
+	private JButton btn;		// ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ 
 	private JButton btn2;
 	
 	public MyEventFrame(String title) {
@@ -31,7 +31,7 @@ public class MyEventFrame extends JFrame implements ActionListener{
 		
 		add(btn);
 		
-		btn2 = new JButton("Å¬¸¯");
+		btn2 = new JButton("í´ë¦­");
 		btn2.addActionListener(this);
 		add(btn2);
 		
@@ -45,7 +45,7 @@ public class MyEventFrame extends JFrame implements ActionListener{
 		if(obj == btn) {
 			String s = btn.getText();
 			if(s.equals("Action")) {
-				btn.setText("¿¢¼Ç");
+				btn.setText("ì—‘ì…˜");
 			} else {
 				btn.setText("Action");
 			}
